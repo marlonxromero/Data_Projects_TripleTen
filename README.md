@@ -47,11 +47,4 @@ Each chart includes tooltips and filters to allow interactive exploration of the
   - Built calculated fields for Return Rate and Profit Impact.  
   - Designed and combined bar, line, scatter, and geographical charts into a cohesive dashboard.  
 
----
 
-## Future Improvements
-- Add forecasting to anticipate return rates in upcoming quarters.  
-- Segment analysis by customer demographics to identify patterns.  
-- Include advanced parameters for more flexible user-driven analysis.  
-
----
