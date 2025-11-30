@@ -1,111 +1,63 @@
-# 📊 Business Analytics Project
+# 🏡 Airbnb Data Analysis Project
 
-This project analyzes user behavior, purchase activity, and retention lifecycle using real transaction-level event data.  
-Through cohort analysis, funnel evaluation, and retention measurement, this project provides critical insights into how users move through the platform and where business performance can be optimized.
-
----
-
-## 🔥 Project Objectives
-
-- Understand how users progress through the conversion funnel  
-- Analyze customer retention and purchasing cohorts over time  
-- Identify revenue opportunities through behavior patterns  
-- Quantify first-purchase behavior and returning customer impact  
+This project explores Airbnb listing data to uncover pricing patterns, revenue ranking, popular bedroom configurations, and neighborhood demand. Using Excel as the main analytical tool, the dataset was cleaned, segmented, and analyzed to understand what factors drive listing performance and which areas generate the highest earning potential for hosts.
 
 ---
 
-## 🛠 Tools & Technologies Used
+## 🔍 Project Objectives
 
-| Tool | Purpose |
+- Analyze listing supply, pricing, and revenue performance across Airbnb rentals  
+- Identify top-performing neighborhoods and bedroom sizes  
+- Determine which property types generate the most revenue  
+- Summarize key insights for decision-making by hosts, investors, or renters
+
+---
+
+## 🛠 Tools & Skills Used
+
+| Tool | Application |
 |---|---|
-| **Excel / Google Sheets** | Data cleaning, formulas, aggregation |
-| **Pivot Tables & Charts** | Cohort and retention visualization |
-| **Analytical Frameworks** | Conversion funnel, cohort aging, retention tracking |
+| **Excel** | Data analysis, filtering, pivot tables, aggregation |
+| **Pivot Tables & Charts** | Revenue comparisons, neighborhood ranking |
+| **Descriptive Analytics** | Trend interpretation & insight extraction |
 
 ---
 
-## 📁 Dataset Overview
-
-The dataset consists of key behavioral logs and purchase events:
+## 📁 Dataset & Sheet Breakdown
 
 | Sheet Name | Description |
 |---|---|
-| `raw_user_activity` | Full event log w/ timestamps, prices & user_id |
-| `purchase_activity` | Filtered purchase-only activity |
-| `first_purchase` | First-transaction extraction per user |
-| `retention_rates` | Monthly + aging retention matrix |
-| `cohort_analysis` | Cohort-level grouping by first purchase month |
-| `conversion_funnel` | User event flow through view → cart → purchase |
+| `data_dictionary` | Defines column types & data meaning |
+| `listings` | Base dataset of Airbnb listings with pricing, reviews, bedrooms, etc. |
+| `Top Listing Revenue` | Highest earning listings and revenue totals |
+| `Most Popular Bedroom Sizes` | Demand breakdown by 1–5 bedroom rentals |
+| `Popular Bedroom Rentals` | Listings ranked by bedroom quantity and price |
+| `Top 10 Neighborhoods` | Most active review areas — proxy for demand |
+| `Summary Table` | Combined view of pricing, availability, bedroom count |
+| `calendar` | Booking date logic & pricing availability trends |
 
 ---
 
-## 🔍 Key Analytics Performed
+## 🔍 Key Insights Discovered
 
-### 1️⃣ Conversion Funnel Analysis  
-From the *conversion_funnel* sheet:
+- Certain neighborhoods show higher review volume → indicating stronger demand.  
+- Listings with more bedrooms often generate higher annual revenue, but single-bedroom stays remain most frequently booked.  
+- Pricing varies significantly between boroughs, suggesting clear market segmentation.  
+- Revenue concentration is visible among top listings, highlighting investment hotspots.
 
-| Step | Users | Conversion to Next Step |
+---
+
+## 📈 Business Application
+
+| Stakeholder | Insight Value |
 |---|---|
-| **View** → Cart | 10,453 users → 29.04% continued |
-| **Cart** → Purchase | 3,036 users → 35.6% continued |
-| Final Purchase | 1,081 transactions |
-
-**Insight:**  
-Large majority drop occurs between **product view and checkout initiation**, suggesting opportunity for UX optimization or remarketing.
-
+| Investors | Helps identify profitable property types & neighborhood ROI |
+| Hosts | Understand which listing attributes boost booking rate |
+| Renters | Shows most affordable vs premium areas in a city |
+ 
 ---
 
-### 2️⃣ Cohort & Retention Analysis  
-Cohorts grouped by **first purchase month**, then tracked as they age:
+### 📍 Created by: **Marlon Romero**
 
-- Example cohorts:
-  - **2020-09:** 32 users → dropped to 4 by month 1
-  - **2020-10:** 187 users → fell gradually over 3+ months
-  - **2020-11 & 2020-12:** continued decline with similar decay curve
-
-**Insight:**  
-Retention decreases sharply after month 1 — recurring engagement strategies may be needed.
-
----
-
-### 3️⃣ First Purchase Behavior
-`first_purchase` sheet identifies how quickly new customers convert:
-
-- Most first-time users convert within the **first month**
-- Delayed purchasing behavior is less common — meaning activation matters early
-
----
-
-### 4️⃣ Revenue & Purchase Activity
-
-`purchase_activity` shows:
-
-- Full purchase event logs with price data
-- Categories such as **computers**, **stationery**, **consumer electronics**
-- Ability to track **AOV**, **LTV**, and **repeat purchase segments**
-
----
-
-## 🚀 Business Takeaways
-
-| Finding | Opportunity |
-|---|---|
-| High funnel drop-off early | Improve product page clarity / offer incentives |
-| Retention declines after Month 1 | Build stronger post-purchase engagement |
-| Early purchase conversion strong | Lean into onboarding + first-purchase triggers |
-
-
----
-
-## 📂 How to Access the Project
-
-1. Download `.xlsx` file  
-2. Open sheets in Excel or Google Sheets  
-3. Review insights on the **Executive Summary** page  
-4. Explore deeper analysis through cohort, retention & funnel tabs
-
----
-
-### 💼 Created by: **Marlon Romero**  
-**Business & Data Analytics | Process + Insight-Driven Decision Making**
+Data & BI Analyst | Turning data into actionable insights
 
